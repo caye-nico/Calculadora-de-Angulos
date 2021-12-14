@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-3">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Ângulos</title>
+    <style>
+        body {
+            background-color: rgb(185, 178, 247);
+            color: rgb(0, 0, 0); /*Comentário em CSS */
+            font: normal 25pt sans-serif;
+            margin-left: 10%;
+            margin-top: 10%;
+        
+        }
+        h1 {
+            color: rgb(0, 0, 0);
+        }
+        p {
+            font: normal 25pt Times;
+        
+        }
+    </style>
+</head>
+<body>
+    </p>
+    <script>
+        var nome = window.prompt ('Qual é seu nome?')
+        document.write (`Olá <strong>${nome}</strong>!`)
+        var horas = Number (window.prompt ('Digite as horas')) // Quantas horas são
+        var minutos = Number (window.prompt ('Digite os minutos')) //Quantas minutos são
+        var segundos = Number (window.prompt ('Digite os Segundos')) // Quantas segundos são
+        var angulo_minutos = 6*minutos + segundos/10 // number.parseInt(n) ou reais number.parseFloat(n)
+        var angulo_horas = 30*horas + minutos/2
+        var angulo_resultante = angulo_horas - angulo_minutos 
+
+        document.write (' O Ângulo resultante entre os ponteiros é ' + angulo_resultante ) 
+        document.write (' °.')
+
+    </script>
+        <p> Obrigado por utilizar nossa programação!
+            Para calcular novamente, tecle F5
+
+</body>
+</html>
